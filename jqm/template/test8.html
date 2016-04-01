@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Include jQuery Mobile stylesheets -->
+  <link rel="stylesheet" href="{{ static_url("jquery.mobile-1.4.5.min.css") }}">
+  <!-- Include the jQuery library -->
+  <script src="{{ static_url("jquery-1.12.1.min.js") }}"></script>
+  <!-- Include the jQuery Mobile library -->
+  <script src="{{ static_url("jquery.mobile-1.4.5.min.js") }}"></script>
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+  <div data-role="panel" id="myPanel" data-position="right" data-display="overlay"> 
+    <h2>Panel Header</h2>
+    <p>You can close the panel by clicking outside the panel, pressing the Esc key, by swiping, or by clicking the button below:</p>
+	<a href="#">Some fancy link1</a><br/>
+	<a href="#">Some fancy link2</a><br/>
+	<a href="#">Some fancy link3</a><br/>
+	<a href="#">Some fancy link4</a><br/>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close panel</a>
+  </div> 
+
+  <div data-role="header">
+    <h1>Page Header</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>Click on the button below to open the Panel.</p>
+    <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Open Panel</a>
+  </div>
+
+  <div data-role="footer">
+    <h1>Page Footer</h1>
+  </div> 
+</div> 
+
+</body>
+</html>
