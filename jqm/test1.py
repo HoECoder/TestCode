@@ -33,6 +33,9 @@ class HomeHandler(tornado.web.RequestHandler):
             mod = "test1.html"
         print self.static_url("jquery.mobile-1.4.5.min.css")
         self.render(mod)
+    def post(self,*args,**kwds):
+        print args
+        print kwds
 
 def main():
     tornado.options.parse_command_line()
