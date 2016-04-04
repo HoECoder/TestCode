@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Include jQuery Mobile stylesheets -->
+  <link rel="stylesheet" href="{{ static_url("jquery.mobile-1.4.5.min.css") }}">
+  <!-- Include the jQuery library -->
+  <script src="{{ static_url("jquery-1.12.1.min.js") }}"></script>
+  <!-- Include the jQuery Mobile library -->
+  <script src="{{ static_url("jquery.mobile-1.4.5.min.js") }}"></script>
+</head>
+<body>
+<div data-role="page" data-theme="a" id="loginpage">
+  <div data-role="content">
+    <h1>Controller Login</h1>
+    <form method="post" action="demoform.asp">
+      <div class="ui-field-contain">
+        <label for="loginid" class="ui-hidden-accessible">Login:</label>
+        <input type="text" name="loginid" id="loginid" placeholder="Username">       
+        <label for="pwd" class="ui-hidden-accessible">Password</label>
+        <input type="password" name="pwd" id="pwd" placeholder="Password">
+      </div>
+      <input type="submit" data-inline="true" value="Submit">
+    </form>
+  </div>
+
+    <div class="ui-grid-b">
+      <div class="ui-block-a">
+        <span>Uptime: 2000.5 days</span>
+      </div>
+      <div class="ui-block-b">
+         
+      </div>
+      <div class="ui-block-c" style="text-align: right;">
+         <span>No program active</span>
+      </div>
+    </div>
+
+</div>
+
+</body>
+</html>
